@@ -70,7 +70,8 @@ do
     results=${csv_dirname}/${csv_filename}.markdown
 
     sed -e '1p' -e '1 s/[^,]/ /g' $source_csvfile | \
-        sed -e 's/,/,| /g' -e 's/^/|/' -e 's/.$/ |/' | \
+        sed -e 's/,/,| /g' -e 's/^/|/' | tr -d "\r" \
+        sed -e 's/$/ |/' | \
         column -s ',' -t -x | \
         sed -e '2 s/ /-/g' &gt; ${results}
 
