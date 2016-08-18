@@ -76,9 +76,11 @@ do
 
     pbcopy &lt; ${results}
 
-    open -a MacVim.app ${results}
+    [[ -x /Applications/MacVim.app/Contents/MacOS/MacVim ]] \
+        &amp;&amp; open -a MacVim.app ${results}
 
-    open -a Marked.app ${results}
+    [[ -x /Applications/Marked.app/Contents/MacOS/Marked ]] \
+        &amp;&amp; open -a Marked.app ${results}
 
 done</string>
 					<key>CheckedForUserDefaultShell</key>
