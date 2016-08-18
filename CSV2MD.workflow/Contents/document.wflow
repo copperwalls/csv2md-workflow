@@ -69,6 +69,11 @@ do
     csv_filename=$(basename $source_csvfile .csv)    # assume CSV
     results=${csv_dirname}/${csv_filename}.markdown
 
+    sed -e '1p' -e '1 s/[^,]/ /g' $source_csvfile | \
+        sed -e 's/,/,| /g' -e 's/^/|/' -e 's/.$/ |/' | \
+        column -s ',' -t -x | \
+        sed -e '2 s/ /-/g' &gt; ${results}
+
 done</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
