@@ -59,9 +59,16 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>for f in "$@"
+					<string>export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_CTYPE=UTF-8
+
+for source_csvfile in "$@"
 do
-	echo "$f"
+    csv_dirname=$(dirname $source_csvfile)
+    csv_filename=$(basename $source_csvfile .csv)    # assume CSV
+    results=${csv_dirname}/${csv_filename}.markdown
+
 done</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
@@ -172,12 +179,10 @@ done</string>
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>339.000000:447.000000</string>
+				<string>339.000000:557.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
