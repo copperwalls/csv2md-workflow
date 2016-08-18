@@ -74,6 +74,8 @@ do
         column -s ',' -t -x | \
         sed -e '2 s/ /-/g' &gt; ${results}
 
+    pbcopy &lt; ${results}
+
 done</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
