@@ -74,7 +74,8 @@ do
         column -s ',' -t -x | \
         sed -e '2 s/ /-/g' &gt; ${results}
 
-    pbcopy &lt; ${results}
+    [[ -x /usr/bin/pbcopy ]] \
+        &amp;&amp; pbcopy &lt; ${results}
 
     [[ -x /Applications/MacVim.app/Contents/MacOS/MacVim ]] \
         &amp;&amp; open -a MacVim.app ${results}
