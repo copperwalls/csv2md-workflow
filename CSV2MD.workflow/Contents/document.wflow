@@ -70,7 +70,7 @@ do
     results=${csv_dirname}/${csv_filename}.markdown
 
     sed -e '1p' -e '1 s/[^,]/ /g' $source_csvfile | \
-        sed -e 's/,/,| /g' -e 's/^/|/' | tr -d "\r" \
+        sed -e 's/,/,| /g' -e 's/^/|/' | tr -d "\r" | \
         sed -e 's/$/ |/' | \
         column -s ',' -t -x | \
         sed -e '2 s/ /-/g' &gt; ${results}
@@ -197,7 +197,7 @@ done</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>339.000000:557.000000</string>
+				<string>328.000000:727.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
