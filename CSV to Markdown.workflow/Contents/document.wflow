@@ -84,7 +84,7 @@ do
         sed -e 's/^/|/' | tr -d "\r" | \
         sed -e 's/$/ |/' | \
         column -s '∆' -t -x | \
-        sed -e '2 s/ /-/g' &gt; ${results}
+        sed -e '2 s/ /-/g' | tr -d '"' &gt; ${results}
 
     [[ -x /usr/bin/pbcopy ]] \
         &amp;&amp; pbcopy &lt; ${results}
