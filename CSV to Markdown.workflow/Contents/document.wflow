@@ -73,15 +73,17 @@ do
     #
     #    '1p'           = copy and insert first line on second line
     #    '1 s/[^,]/ /g' = delete copied except “,”
-    #    's/,/,| /g'    = add magic marker
     #    's/^/|/'       = add “|” at beginning of line
     #    's/$/ |/g'     = add “|” at end of line
     #    '2 s/ /-/g'    = replace spaces w/ hyphens on second line
     #
+    # Note: `perl` adds the magic marker
+
     sed -e '1p' -e '1 s/[^,]/ /g' $source_csvfile | \
-        sed -e 's/,/,| /g' -e 's/^/|/' | tr -d "\r" | \
+        perl -pe 's/,(?=(?:[^"]|"[^"]*")*$)/∆|/g' | \
+        sed -e 's/^/|/' | tr -d "\r" | \
         sed -e 's/$/ |/' | \
-        column -s ',' -t -x | \
+        column -s '∆' -t -x | \
         sed -e '2 s/ /-/g' &gt; ${results}
 
     [[ -x /usr/bin/pbcopy ]] \
@@ -203,12 +205,10 @@ done</string>
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>328.000000:838.000000</string>
+				<string>328.000000:806.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
