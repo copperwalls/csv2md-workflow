@@ -27,6 +27,8 @@ This [Automator] workflow is for automating 5 and 6 above.
 
 Then just double-click the workflow and _Install_ it as a “Service”.
 
+![alt text][Service Installer screenshot]
+
 ## How to Use ##
 
 1. Right-click on the (exported) CSV file
@@ -59,6 +61,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 [MarkdownExtra Plugin]: https://www.dokuwiki.org/plugin:markdownextra
 [Automator]: https://en.wikipedia.org/wiki/List_of_OS_X_components#Automator
 [download the archive directly]: https://github.com/copperwalls/csv2md-workflow/archive/master.zip
+[Service Installer screenshot]: https://github.com/copperwalls/csv2md-workflow/blob/master/screenshots/Service_Installer.png "Service Installer—Click Install"
 [a bunch of Terminal commands]: https://github.com/copperwalls/csv2md-workflow/blob/master/CSV%20to%20Markdown.workflow/Contents/document.wflow#L82
 [copied automatically]: https://github.com/copperwalls/csv2md-workflow/blob/master/CSV%20to%20Markdown.workflow/Contents/document.wflow#L89
 [couple of applications]: https://github.com/copperwalls/csv2md-workflow/blob/master/CSV%20to%20Markdown.workflow/Contents/document.wflow#L92
