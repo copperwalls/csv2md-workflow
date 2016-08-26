@@ -30,6 +30,7 @@ CSV to Markdown
 
 あとは，そのディレクトリー内にあるワークフローをダブルクリックして，“サービス”としてインストールすれば良いです。
 
+![alt text][サービスインストーラースクリーンショット]
 
 ## 使い方 ##
 
@@ -66,6 +67,7 @@ Copyright (c) 2016 ed.o
 [MarkdownExtraのプラグイン]: https://www.dokuwiki.org/plugin:markdownextra
 [Automator]: https://duckduckgo.com/?q=OS+X+Automator+とは
 [圧縮ファイルを直接ダウンロード]: https://github.com/copperwalls/csv2md-workflow/archive/master.zip
+[サービスインストーラースクリーンショット]: https://github.com/copperwalls/csv2md-workflow/blob/master/screenshots/Service_Installer_ja.png "サービスインストーラー クリックしてインストール"
 [組み合わせしたターミナルコマンド]: https://github.com/copperwalls/csv2md-workflow/blob/master/CSV%20to%20Markdown.workflow/Contents/document.wflow#L82
 [自動的にコピーされます]: https://github.com/copperwalls/csv2md-workflow/blob/master/CSV%20to%20Markdown.workflow/Contents/document.wflow#L89
 [2つのアプリ]: https://github.com/copperwalls/csv2md-workflow/blob/master/CSV%20to%20Markdown.workflow/Contents/document.wflow#L92
