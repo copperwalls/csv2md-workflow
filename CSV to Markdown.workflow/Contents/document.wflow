@@ -92,8 +92,8 @@ do
     [[ -x /Applications/MacVim.app/Contents/MacOS/MacVim ]] \
         &amp;&amp; open -a MacVim.app ${results}
 
-    [[ -x /Applications/Marked.app/Contents/MacOS/Marked ]] \
-        &amp;&amp; open -a Marked.app ${results}
+    [[ -x /Applications/Marked\ 2.app/Contents/MacOS/Marked\ 2 ]] \
+        &amp;&amp; open -a Marked\ 2.app ${results}
 
 done</string>
 					<key>CheckedForUserDefaultShell</key>
@@ -208,7 +208,7 @@ done</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>328.000000:806.000000</string>
+				<string>328.000000:765.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
