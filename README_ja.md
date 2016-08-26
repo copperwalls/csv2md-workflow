@@ -38,6 +38,7 @@ CSV to Markdown
 2. サービスメニュー内にある“CSV to Markdown”を選択して
 3. 結果をどこかに貼り付ければ良い
 
+注意: UTF-8でエンコードされたCSVファイルのみに対応しています。LibreOfficeかNumbersで作成したCSVファイルにはそのまま使えます。
 
 ## どういう動きをするのか ##
 
